@@ -34,11 +34,11 @@ function getWriterOpts () {
       })
 
       if (commit.type === 'feat') {
-        commit.type = 'Features'
+        commit.type = '🚀 新增的特性'
       } else if (commit.type === 'fix') {
-        commit.type = 'Bug Fixes'
+        commit.type = '🐛 修复的 bug'
       } else if (commit.type === 'perf') {
-        commit.type = 'Performance Improvements'
+        commit.type = '🏃‍♀️ 提高的性能'
       } else if (commit.type === 'revert' || commit.revert) {
         commit.type = 'Reverts'
       } else if (discard) {
