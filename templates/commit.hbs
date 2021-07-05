@@ -7,18 +7,11 @@
 
 {{~!-- commit link --}} {{#if @root.linkReferences~}}
   ([{{shortHash}}](
-  {{~#if @root.repository}}
-    {{~#if @root.host}}
-      {{~@root.host}}/
-    {{~/if}}
-    {{~#if @root.owner}}
-      {{~@root.owner}}/
-    {{~/if}}
-    {{~@root.repository}}
-  {{~else}}
-    {{~@root.repoUrl}}
-  {{~/if}}/
-  {{~@root.commit}}/{{hash}}))
+  http://192.168.1.85:8080/commits/
+  {{~#if @root.owner}}
+    {{~@root.owner}}/
+  {{~/if}}
+  {{~@root.repository}}{{hash}}))
 {{~else}}
   {{~shortHash}}
 {{~/if}}
