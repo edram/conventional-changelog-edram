@@ -38,7 +38,7 @@ function getWriterOpts () {
       } else if (commit.type === 'fix') {
         commit.type = '🐛 修复的 bug'
       } else if (commit.type === 'perf') {
-        commit.type = '🏃‍♀️ 提高的性能'
+        commit.type = '🏃 提高的性能'
       } else if (commit.type === 'revert' || commit.revert) {
         commit.type = 'Reverts'
       } else if (discard) {
