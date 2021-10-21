@@ -29,7 +29,7 @@ function getWriterOpts () {
       const issues = []
 
       commit.notes.forEach(note => {
-        note.title = 'BREAKING CHANGES'
+        note.title = '💥 BREAKING CHANGES'
         discard = false
       })
 
